@@ -1,0 +1,88 @@
+/**
+Title: Exercise 2.2
+Author: Professor Krasso
+Date: 06/01/2022
+Modified By: Chad ONeal
+Description: JS styling Exercise 2.2     
+*/
+
+body {
+    font-family: 'Oswald', 'Verdana', Arial, sans-serif;
+}
+
+/**
+* styling for return-home anchor tag back to the landing page.
+* Changes color, text decoration, and sets hover background color and text.
+* Sets a text color for the visited link.
+*/
+
+
+.return-home {
+    color: #4F3674;
+    text-decoration: none;
+}
+
+.return-home:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+}
+
+.return-home:visited {
+    color: #3C275A
+}
+
+
+
+/**
+    google font-family style and font color.
+*/
+
+body {
+    font-family: 'Oswald', 'Verdana', Arial, sans-serif;
+    color: #453674;
+}
+
+/**
+    container styles for index.html
+*/
+
+#container {
+    margin: 50px 100px 100px;
+}
+
+/**
+   header styles for index.html.
+*/ 
+h1, h2, h3, h4 {
+    background-color: #3C275A;
+    color: white;
+    border: solid 1px #D6A800;
+    padding: 10px;
+}
+
+/**
+    header style via class header.
+*/
+.header {
+    background-color: #3c275a;
+    color: white;
+    text-align: left;
+}
+
+/**
+    list item anchor styling, removes underline and determines gui response.
+*/
+
+.link a {
+    color: #453674;
+    text-decoration: none;
+}
+
+.link a:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+}
+
+.link a:visited {
+    color: #3C275A;
+}
