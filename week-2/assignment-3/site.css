@@ -58,6 +58,6 @@ a:visited {
     color: #3C275A;
 }
 
-ul {
+.ulBorder {
     border: dotted 1px red;
 }
