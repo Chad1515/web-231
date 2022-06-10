@@ -57,3 +57,7 @@ a:hover {
 a:visited {
     color: #3C275A;
 }
+
+ul {
+    border: dotted 1px red;
+}
