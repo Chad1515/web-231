@@ -1,0 +1,105 @@
+<!--
+=======================================
+; Title: Assignment 5.2 - Sequence Game
+; Author: Tierre Green from Github
+; Modified by: Chad ONeal
+; Date 06/23/2022
+; Description: Sequence Game 
+=========================================
+-->
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+
+        <meta charset="UTF-8">
+
+    <!--title-->
+        <title>Assignment 5.2 - Sequence Game</title>
+
+    <!--global.css file stylesheet-->
+        <link href="../global.css" rel="Stylesheet">
+
+    <!--css for styling-->
+        <link href="oneal-sequence-game.css" rel="Stylesheet">
+
+    <!--google fonts stylesheet-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+
+<!--main body-->
+    <body>
+
+    <!--container div-->    
+        <div id="container">
+
+        <!--h1 app header class-->
+            <h1 class="app-header">Welcome to the sequence game!</h1>
+
+        <!--card with card class dropdown and button to display sequence-->
+            <div class="card">
+
+            <!--card title div-->
+                <div class="card-title">
+                    Sequence Selection Form
+                </div>
+
+            <!--form class div selection form for display-->
+                <div class="form">
+
+                <!--form field with dropdown-->
+                    <div class="form-field">
+
+                    <!--Label for dropdown-->
+                        <label>Choose a number sequence:</label>
+
+                    <!--dropdown selection-->
+                        <select id="sequenceddl" class="drop-down-menu">
+
+                        <!--option 1 for sequence when loaded-->
+                            <option class="option" value="select">Select</option>
+
+                        <!--option 2 for fibonacci-->
+                            <option class="option" value="fibonacci">Fibonacci Sequence</option>
+
+                        <!--option 3 for sequence when loaded-->
+                            <option class="option" value="even">Even Numbers</option>
+                        
+                        <!--option 4 for sequence when loaded-->
+                            <option class="option" value="odd">Odd Numbers</option>
+                        </select>
+                        
+                    </div>
+
+                <!--button to display sequence on results card-->
+                    <div class="form-field">
+
+                    <!--button for results to display-->
+                        <button class="btn btn-primary full-width" id="btnDisplaySequence">Display Sequence</button>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+    <!--Card div for results -->
+        <div class="card" id="results-card">
+
+        <!--div for results card header-->
+            <div class="card-title">
+                    Sequence Results
+            </div>
+
+        <!--div for results card-->
+            <div class="card-content" id="seqResults"></div>
+        </div>
+
+    <!--return anchor to take back to the landing page-->
+        <p><a class="return-home" href="https://chad1515.github.io/web-231/">Return</a></p>
+
+    <!--script for sequence selection and results string-->
+        <script src="oneal-sequence-game.js"></script>
+        </div>
+    </body>
+</html>
