@@ -1,0 +1,186 @@
+<!--
+============================================
+; Title: Assignment 6.2 - In-N-Out-Books
+; Author: Tierre Green from Github 
+; Modified by: Chad ONeal
+; Date: 06/29/2022
+; Description: In-N-Out-Books Assignment 6.2
+============================================
+-->
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+
+        <meta charset="UTF-8">
+
+    <!--page title-->
+        <title>Assignment 6.2 - In-N-Out-Books</title>
+
+    <!--global.css stylesheet-->
+        <link href="../global.css" rel="Stylesheet">
+
+    <!--css for styling-->
+        <link href="oneal-in-n-out-books.css" rel="Stylesheet">
+
+    <!--Google fonts stylesheet-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+
+<!--main body-->
+    <body>
+
+    <!--div container-->    
+        <div id="container">
+
+        <!--app header-->
+            <h1 class="app-header">Welcome to In-N-Out-Books</h1>
+
+        <!--1st card div-->
+            <div class="card">
+
+            <!--title of div card-->
+                <div class="card-title">
+                    My Favorites
+                </div>
+
+                <div class="card-content">
+
+                <!--form class div-->
+                    <div class="form">
+
+                    <!--form field dropdown for selection-->
+                        <div class="form-field">
+
+                        <!--label title-->
+                            <label>Choose a listing:</label>
+
+                        <!--dropdown selection-->
+                            <select id="favList" class="drop-down-menu">
+
+                            <!--option for listing-->
+                                <option class="option" value="select">--Select--</option>
+
+                            <!--option for top 3 books-->
+                                <option class="option" value="books">Top 3 Favorite Books</option>
+
+                            <!--option for top 3 authors-->
+                                <option class="option" value="authors">Top 3 Favorite Authors</option>
+                            </select>
+                            
+                        </div>
+
+                    <!--form-field for button-->
+                        <div class="form-field">
+
+                        <!--displaying listing button-->
+                            <button class="btn btn-primary full-width" id="btnDisplayListing">Display Listing</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        <!--return anchor to take back to landing page-->
+            <p><a class="return-home" href="https://chad1515.github.io/web-231/">Return</a></p>
+
+            <br><br>
+
+    <!--favorite books card -->
+        <div class="card" id="favBooks">
+
+        <!--favorite books card header-->
+            <div class="card-title">
+                    Top 3 Favorite Books
+            </div>
+
+        <!--card content div-->
+            <div class="card-content">
+
+            <!--favorite books table-->
+                <table class="table">
+                
+                <!--number of pages, titles, and isbn labels-->
+                    <tr>
+                        <th>ISBN</th>
+                        <th>Title</th>
+                        <th>Pages</th>
+                    </tr>
+                
+                    <tbody>
+                    
+                        <!--table values-->
+                        <tr>
+                            <td id="txtSelectedISBN"></td>
+                            <td id="txtSelectedTitle"></td>
+                            <td id="txtSelectedPages"></td>
+                        </tr>
+
+                        <!--table values-->
+                        <tr>
+                            <td id="txtAnxiousISBN"></td>
+                            <td id="txtAnxiousTitle"></td>
+                            <td id="txtAnxiousPages"></td>   
+                        </tr>
+                        
+                        <!--table values-->
+                        <tr>
+                            <td id="txtBlinkISBN"></td>
+                            <td id="txtBlinkTitle"></td>
+                            <td id="txtBlinkPages"></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <!--favorite authors card-->
+        <div class="card" id="favAuthors">
+
+            <!--favorite authors card header-->
+                <div class="card-title">
+                        Top 3 Favorite Authors
+                </div>
+    
+            <!--card content div-->
+                <div class="card-content">
+    
+                <!--favorite authors table-->
+                    <table class="table">
+                    
+                    <!--author and genre table headers-->
+                        <tr>
+                            <th>Name</th>
+                            <th>Genre</th>
+                        </tr>
+                        <tbody>
+                        <!--author and genre for 3 favorite authors row 1-->
+                            <tr>
+                                <td id="txtNathanName"></td>
+                                <td id="txtNathanGenre"></td>
+                            </tr>
+        
+                        <!--author and genre for 3 favorite authors row 2-->
+                            <tr>
+                                <td id="txtMaxName"></td>
+                                <td id="txtMaxGenre"></td>
+                            </tr>
+                            
+                        <!--author and genre for 3 favorite authors row 3-->
+                            <tr>
+                                <td id="txtMalName"></td>
+                                <td id="txtMalGenre"></td>
+                            </tr>
+                        </tbody>
+    
+                    </table>
+                </div>
+            </div>
+
+    <!--script for selection and results string-->
+        <script src="oneal-in-n-out-books.js"></script>
+        </div>
+    </body>
+</html>
