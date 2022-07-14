@@ -1,0 +1,119 @@
+<!--
+============================================
+; Title: Assignment 8.2 - Alphabet Game
+; Author: Tierre Green from Github 
+; Modified by: Chad ONeal
+; Date: 07/14/2022
+; Description: Alphabet Game Assignment 8.2 html code
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+    <!--page title-->
+        <title>Assignment 8.2 - Alphabet Game</title>
+
+    <!--global.css stylesheet-->
+        <link href="../global.css" rel="Stylesheet">
+
+    <!--css for styling-->
+        <link href="oneal-alphabet-game.css" rel="Stylesheet">
+
+    <!--google fonts stylesheet-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+
+<!--main body-->
+    <body>
+
+    <!--div container-->
+        <div class="container">
+
+        <!--app header-->
+            <h1 class="app-header">
+                Welcome to the Alphabet Game!
+            </h1>
+
+        <!--1st card div-->
+            <div class="card">
+
+            <!--title of card div-->
+                <div class="card-title">
+                    Alphabet Number Form
+                </div>
+
+            <!--card content div-->
+                <div class="card-content">
+
+                <!--form class div-->
+                    <div class="form">
+
+                    <!--form field dropdown for selection-->
+                        <div class="form-field">
+
+                        <!--title of label-->
+                            <label>Alphabet Letter Position:</label>
+
+                        <!--number selection of which letter in alphabet-->
+                            <input class="input" id="Position" type="number">
+                        </div>
+
+                    <!--button creation-->
+                        <div class="form-field">
+
+                        <!--find letter button-->
+                            <button class="btn btn-primary full-width" id="FindLetter">
+                                Find Letter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        <!--return anchor to take back to landing page.-->
+            <p><a class="return-home" href="https://chad1515.github.io/web-231/">Return</a></p>
+
+            <br>
+
+        <!--alphabet letters card-->
+            <div class="card">
+
+            <!--title of card-->
+                <div class="card-title">
+                    Letters in the Alphabet
+                </div>
+
+            <!--alphabet letters content-->
+                <div class="card-content" id="alphabet" type="alphabet">
+                </div>
+            </div>
+
+            <br>
+
+        <!--results card-->
+            <div class="card">
+            
+            <!--card title-->
+                <div class="card-title">
+                    Results
+                </div>
+
+            <!--results anchor-->
+                <div class="card-content" id="alpha-letter">
+                </div>
+            </div>
+
+        <!--javascript for oneal-alphabet-->
+            <script src="oneal-alphabet-game.js"></script>
+        </div>
+
+    </body>
+</html>
