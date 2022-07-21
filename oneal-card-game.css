@@ -1,0 +1,197 @@
+/**
+=======================================
+; Title: Assignment 9.2 - Card Game
+; Author: Chad ONeal
+; Date: 07/20/2022
+; Description: Final Card Game CSS
+=========================================
+*/
+
+/**
+* styling for body of page, font families.
+*/
+
+body {
+    font-family: 'Oswald', 'Verdana', Arial, sans-serif;
+}
+
+/**
+* styling for app-header div per course standards centering app header text. 
+*/
+.app-header {
+    text-align: center;
+}
+
+/**
+*Styling for header at top of page
+*/
+
+.app-header{
+    text-align: center;
+    
+}
+
+/**
+*Styling for contents of the 1st card on page
+*/
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding: 10px;
+
+}
+
+.card-title{
+    text-align: center;
+    font-size: 2em;
+    color: #4F3674;
+    font-weight: 400; 
+
+}
+
+.card-content{
+    padding: 2px 16px;
+
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+/**
+*Styling for contents of display sequence button
+*/
+
+.btn {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 32px;
+    color: black;
+}
+
+.btn-primary {
+    background-color: #4F3674;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+}
+
+/**
+*Styling for input results card
+*/
+
+.input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/**
+*Styling for input of from field
+*/
+
+.form {
+    display: inline-grid;
+    grid-template-columns: auto;
+}
+
+.form-field {
+    padding: 20px;
+}
+
+.form-results {
+    width: 600px;
+    margin: 3% auto 0;
+    
+}
+
+/**
+*Styling for return home button 
+*/
+
+.return-home {
+    color: #4F3674;
+    text-decoration: none;
+    
+    
+}
+
+.return-home:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+}
+
+.return-home:visited {
+    color: #3C275A;
+}
+
+/**
+*Styling to return button
+*/
+p{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+/**
+* styling for card class divs per course standards setting the margin of the page.
+*/
+.card {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/**
+*added padding to card content to improve visual match to assignment specs.
+*/
+.card-content {
+    padding: 2px 16px;
+}
+
+/**
+* player card css per assignment instructions.
+*/
+
+.player-card {
+    text-align: center;
+}
+
+/**
+*setting the grid with padding, number of columns and grid gaps.
+*/
+#player-card-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 15px;
+    grid-gap: 25px;
+    margin-right: 10px;
+     
+}
+
+/**
+* return to landing page anchor position on the page.
+*/
+.return-home {
+    margin-left: 25%
+}
